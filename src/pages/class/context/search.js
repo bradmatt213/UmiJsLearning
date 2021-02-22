@@ -17,7 +17,7 @@ export default class Search extends Component {
   };
   handleSubmit = () => {
     this.context.dispath({
-      type: 'TEXT',
+      type: 'Lists',
       payload: this.state.value,
     });
   };

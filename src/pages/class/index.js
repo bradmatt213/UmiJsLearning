@@ -28,6 +28,9 @@ export default class Index extends Component {
           <Item>
             <Link to="/class/context">Context</Link>
           </Item>
+          <Item>
+            <Link to="/class/lazy-load">lazyload</Link>
+          </Item>
         </List>
       </div>
     );
