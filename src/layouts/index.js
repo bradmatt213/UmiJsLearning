@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './index.css';
+import ErrorBoundary from '@/components/ErrorBoundary';
 
-const BasicLayout: React.FC = props => {
+const BasicLayout = props => {
   return (
     <div className={styles.normal}>
       <h1 className={styles.title}>Hello! Welcome to umi!</h1>
-      {props.children}
+      <ErrorBoundary>{props.children}</ErrorBoundary>
     </div>
   );
 };

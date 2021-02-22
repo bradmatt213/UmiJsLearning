@@ -7,6 +7,6 @@ export default {
       res.json({
         lists: Array(10).fill(req.query.value),
       });
-    },1000);
+    },100);
   },
 };

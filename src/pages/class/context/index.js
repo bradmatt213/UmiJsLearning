@@ -28,6 +28,9 @@ export default class Index extends Component {
     }
   };
   render() {
+    const house={
+      info:''
+    }
     return (
       <div>
         <SearchContext.Provider
@@ -36,6 +39,7 @@ export default class Index extends Component {
             dispath: this.handleDispatch,
           }}
         >
+          {house?.info2?.id}
           <Search />
           <LazyLoad component={import('./lists')}></LazyLoad>
           <Consumer></Consumer>
